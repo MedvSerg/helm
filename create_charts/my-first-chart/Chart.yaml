@@ -1,5 +1,5 @@
 apiVersion: v2
-name: my_first_chart
+name: my-first-chart
 description: A Helm chart for Kubernetes
 
 keywords:
@@ -8,7 +8,7 @@ keywords:
 
 maintainers:
   - name: "S M"
-  - email: "1@2.com"
+    email: "1@2.com"
 
 # A chart can be either an 'application' or a 'library' chart.
 #
