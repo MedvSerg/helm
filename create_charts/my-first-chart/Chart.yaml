@@ -33,7 +33,7 @@ appVersion: "1.16.0"
 
 dependencies:
   - name: mysql
-    vesion: "9.4.5"
+    vesion: "11.1.17"
     repository: "https://charts.bitnami.com/bitnami"
 
   - name: rabbitmq
