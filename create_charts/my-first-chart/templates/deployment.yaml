@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 
 {{- if .Values.customblock.author.name}}
-{{"Custom value is present" | nintend 4}}
+{{"Custom value is present" | nindent 4}}
 {{end}}
 
 
