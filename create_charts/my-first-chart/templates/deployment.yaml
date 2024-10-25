@@ -1,6 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{"Hi Team, we are learning - "}}, {{"HELM"}} 
+
+{{- if .Values.customblock.author.name}}
+{{"Custom value is present" | nintend 4}}
+{{end}}
+
+
 metadata:
   name: {{ include "my_first_chart.fullname" . }}
   labels:
