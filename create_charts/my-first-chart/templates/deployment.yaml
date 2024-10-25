@@ -3,9 +3,9 @@ kind: Deployment
 
 {{- if .Values.customblock.author.name}}
 {{"Custom value is present" | nindent 4}}
+{{- else}}
+{{"Custom value boolean is false" | nindent 4}}
 {{end}}
-
-
 metadata:
   name: {{ include "my_first_chart.fullname" . }}
   labels:
