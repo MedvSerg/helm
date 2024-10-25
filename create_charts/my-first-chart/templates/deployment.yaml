@@ -11,7 +11,7 @@ kind: Deployment
 {{- range .Values.customblock.author.name}}
 author:
   - {{- . }}
-{{-end}}
+{{- end}}
 
 
 metadata:
