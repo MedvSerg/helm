@@ -1,9 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 
-{{- range .Values.customblock.author.name}}
 author:
+{{- range .Values.customblock.author.name}}
   - {{ . }}
+{{- end}}
+
+images:
+{{- range $key,$value := .Values.image}}
+  {{$key}}: {{$value}}
 {{- end}}
 
 
