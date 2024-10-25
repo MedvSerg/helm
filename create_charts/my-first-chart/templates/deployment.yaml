@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 
-  {{ .Values.mysql_image }}
+  {{ .Values.mysql_image.repository }}
 
 metadata:
   name: {{ include "my_first_chart.fullname" . }}
